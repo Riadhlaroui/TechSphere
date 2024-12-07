@@ -369,15 +369,8 @@
         </div>
       </nav>
 
-      <!-- <header class="bg-white shadow">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900">
-            Dashboard
-          </h1>
-        </div>
-      </header> -->
-      <!-- Main Content -->
-        <div class="relative w-full mx-auto h-fit">
+      <!-- Hero section -->
+        <div class="relative w-full mx-auto h-fit mt-2">
           <!-- Carousel Container -->
           <div id="carousel" class="overflow-hidden relative h-fit">
             <!-- Slides -->
@@ -398,15 +391,17 @@
           <!-- Navigation Buttons -->
           <button
             id="prevBtn"
-            class="absolute h-fit backdrop-blur-lg top-1/2 text-gray-700 -translate-y-1/2 left-2 bg-inherit text-white p-2 rounded-lg focus:outline-none"
+            class="absolute h-fit backdrop-blur-xl top-1/2 text-black -translate-y-1/2 left-2 p-2 rounded-md focus:outline-none"
           >
-            &lt;
+          <img src="/Images/previous.svg" class="size-4" alt="">
           </button>
+          
           <button
             id="nextBtn"
-            class="absolute h-fit backdrop-blur-lg top-1/2 text-gray-700 -translate-y-1/2 right-2 bg-inherit text-white p-2 rounded-lg focus:outline-none"
+            class="absolute h-fit backdrop-blur-xl top-1/2 text-black -translate-y-1/2 right-2 p-2 rounded-md focus:outline-none"
           >
-            &gt;
+          <img src="/Images/next.svg" class="size-4" alt="">
+            
           </button>
         </div>
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -416,15 +411,73 @@
         </div>
 
         <section>
-          <div class="relative w-full mx-auto px-4 py-2 bg-gray-900 h-[20rem]">
-            <button class="absolute text-white top-1/2 -translate-y-1/2 left-2">
-              &lt;
+          <div class="relative mr-4 ml-4 rounded-md mx-auto px-4 py-2 bg-gray-900 h-[22rem] overflow-hidden">
+            <!-- Previous Button -->
+            <button class="absolute flex items-center justify-center duration-100 w-[3rem] h-[90%] text-white rounded-md top-1/2 -translate-y-1/2 left-2 hover:backdrop-blur-xl hover:bg-gradient-to-r from-slate-100/10 to-slate-50/10">
+              <img src="/Images/previous-white.svg" class="size-4" alt="">
             </button>
+          
+            <!-- Card Container -->
+            <div class="flex gap-3 ml-[2.5rem] mr-[2.5rem] h-full items-center justify-center transition-transform duration-300 overflow-hidden" id="card-container">
+              <!-- Cards -->
 
-            <button class="absolute text-white top-1/2 -translate-y-1/2 right-2">
-              &gt;
+              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
+                <div class="bg-transparent w-full h-full flex items-center justify-center">
+                  <img src="/Images/ROG-STRIX-Z490-F.png" alt="">
+                </div>
+                <p class="font-semibold">ROG Strix Z490-F Gaming</p>
+                <P class="mb-1 font-bold">$499.95</P>
+                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
+                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><p class="font-bold">Buy</p></button>
+                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
+                </div>
+              </div>
+
+              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
+                <div class="bg-transparent w-full h-full flex items-center justify-center">
+                  <img src="/Images/ROG-STRIX-RTX3070-08G.png" alt="">
+                </div>
+                <p class="font-semibold">ROG STRIX RTX3070 08G</p>
+                <P class="mb-1 font-bold">$599.99</P>
+                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
+                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><img src="/Images/basket.svg" class="size-7" alt=""></button>
+                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
+                </div>
+              </div>
+
+              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
+                <div class="bg-transparent w-full h-full flex items-center justify-center">
+                  <img src="/Images/ROG-Swift-PG329Q.png" alt="">
+                </div>
+                <p class="font-semibold">ROG Swift PG329Q</p>
+                <P class="mb-1 font-bold">$679.99</P>
+                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
+                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><img src="/Images/basket.svg" class="size-7" alt=""></button>
+                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
+                </div>
+              </div>
+
+              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
+                <div class="bg-transparent w-full h-full flex items-center justify-center">
+                  <img src="/Images/ROG-STRIX-750W.png" alt="">
+                </div>
+                <p class="font-semibold">ROG STRIX 750W</p>
+                <P class="mb-1 font-bold">$131.99</P>
+                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
+                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><img src="/Images/basket.svg" class="size-7" alt=""></button>
+                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
+                </div>
+              </div>
+
+              <!-- Add more cards as needed -->
+            </div>
+          
+            <!-- Next Button -->
+            <button class="absolute flex items-center justify-center duration-100 w-[3rem] h-[90%] text-white rounded-md top-1/2 -translate-y-1/2 right-2 hover:backdrop-blur-xl hover:bg-gradient-to-r from-slate-100/10 to-slate-50/10">
+              <img src="/Images/next-white.svg" class="size-4" alt="">
             </button>
           </div>
+          
         </section>
       <main>
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">

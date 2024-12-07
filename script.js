@@ -3,6 +3,18 @@ const slides = Array.from(carousel.children);
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
+document.querySelectorAll(".fav").forEach(button => {
+  button.addEventListener("click", () => {
+      const img = button.querySelector("img");
+      img.src = img.src.endsWith("heart-off.svg")
+          ? "/Images/heart-on.svg"
+          : "/Images/heart-off.svg";
+  });
+});
+
+
+
+
 let currentIndex = 0;
 
 function updateCarousel() {
@@ -24,7 +36,7 @@ nextBtn.addEventListener("click", () => {
 setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   updateCarousel();
-}, 3000);
+}, 4000);
 
 document.addEventListener("DOMContentLoaded", () => {
   const profileButton = document.getElementById("user-menu-button");
