@@ -163,7 +163,7 @@
                   <div>
                     <button
                       type="button"
-                      class="relative flex max-w-xs items-center shadow-lg rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 hover:ring-2 hover:ring-black"
+                      class="relative flex max-w-xs items-center shadow-lg rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 hover:ring-2 hover:ring-black"
                       id="user-menu-button"
                       aria-expanded="false"
                       aria-haspopup="true"
@@ -172,7 +172,7 @@
                       <span class="sr-only">Open user menu</span>
                       <img
                         class="size-[1.9rem] rounded-full"
-                        src="/Images/nice.png"
+                        src="/Images/profile-icon.svg"
                         alt=""
                       />
                     </button>
@@ -196,8 +196,27 @@
                     aria-labelledby="user-menu-button"
                     tabindex="-1"
                   >
+                    <div class="flex items-center justify-start ml-2 mb-3">
+                      <img
+                        class="size-7 rounded-full"
+                        id="profile-icon"
+                        src="/Images/profile-icon.svg"
+                        alt=""
+                      />
+
+                      <div class="ml-3">
+                        <div class="text-base/5 font-medium text-black">
+                          User
+                        </div>
+                        <div class="text-sm font-medium text-gray-400">
+                          user@example.com
+                        </div>
+                      </div>
+                    </div>
                     <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
-                    <div class="flex justify-start">
+                    <div
+                      class="flex justify-start hover:bg-gray-300 duration-150"
+                    >
                       <img
                         src="/Images/account.svg"
                         class="size-[1.5rem] rounded-full mt-2 ml-3"
@@ -212,22 +231,79 @@
                         >Your Profile</a
                       >
                     </div>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="user-menu-item-1"
-                      >Settings</a
+
+                    <div
+                      class="flex justify-start mt-2 hover:bg-gray-300 duration-150"
                     >
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="user-menu-item-2"
-                      >Sign out</a
+                      <img
+                        src="/Images/basket.svg"
+                        class="size-[1.5rem] rounded-full mt-2 ml-3"
+                        alt=""
+                      />
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700"
+                        role="menuitem"
+                        tabindex="-1"
+                        id="user-menu-item-2"
+                        >Basket</a
+                      >
+                    </div>
+
+                    <div
+                      class="flex justify-start mt-2 hover:bg-gray-300 duration-150"
                     >
+                      <img
+                        src="/Images/contact.svg"
+                        class="size-[1.5rem] mt-2 ml-3"
+                        alt=""
+                      />
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700"
+                        role="menuitem"
+                        tabindex="-1"
+                        id="user-menu-item-2"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <div
+                      class="flex justify-start mt-2 hover:bg-gray-300 duration-150"
+                    >
+                      <img
+                        src="/Images/settings.svg"
+                        class="size-[1.5rem] rounded-full mt-2 ml-3"
+                        alt=""
+                      />
+
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700"
+                        role="menuitem"
+                        tabindex="-1"
+                        id="user-menu-item-1"
+                        >Settings</a
+                      >
+                    </div>
+
+                    <div
+                      class="flex justify-start mt-2 hover:bg-gray-300 duration-150"
+                    >
+                      <img
+                        src="/Images/sign-out.svg"
+                        class="size-[1.5rem] rounded-full mt-2 ml-3"
+                        alt=""
+                      />
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700"
+                        role="menuitem"
+                        tabindex="-1"
+                        id="user-menu-item-2"
+                        >Sign out</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -292,17 +368,17 @@
             >
             <a
               href="#"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white"
               >Today's Deals</a
             >
             <a
               href="#"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white"
               >Products</a
             >
             <a
               href="#"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white"
               >Trending</a
             >
           </div>
@@ -312,12 +388,12 @@
                 <img
                   class="size-10 rounded-full"
                   id="profile-icon"
-                  src="/Images/user-rounded.svg"
+                  src="/Images/profile-icon.svg"
                   alt=""
                 />
               </div>
               <div class="ml-3">
-                <div class="text-base/5 font-medium text-white">User</div>
+                <div class="text-base/5 font-medium text-black">User</div>
                 <div class="text-sm font-medium text-gray-400">
                   user@example.com
                 </div>
@@ -370,218 +446,529 @@
       </nav>
 
       <!-- Hero section -->
-        <div class="relative w-full mx-auto h-fit mt-2">
-          <!-- Carousel Container -->
-          <div id="carousel" class="overflow-hidden relative h-fit">
-            <!-- Slides -->
-            <div class="flex transition-transform duration-700 ease-in-out">
-              <img
-                src="/Images/home_header_bg_day_english.gif"
-                alt="Slide 1"
-                class="w-full flex-shrink-0 bg-white"
-              />
-              <img
-                src="/Images/slide2.gif"
-                alt="Slide 2"
-                class="w-full flex-shrink-0 bg-[#000000]"
-              />
-            </div>
+      <div class="relative w-full mx-auto h-fit mt-2">
+        <!-- Carousel Container -->
+        <div id="carousel" class="overflow-hidden relative h-fit">
+          <!-- Slides -->
+          <div class="flex transition-transform duration-700 ease-in-out">
+            <img
+              src="/Images/home_header_bg_day_english.gif"
+              alt="Slide 1"
+              class="w-full flex-shrink-0 bg-white"
+            />
+            <img
+              src="/Images/slide2.gif"
+              alt="Slide 2"
+              class="w-full flex-shrink-0 bg-[#000000]"
+            />
           </div>
-
-          <!-- Navigation Buttons -->
-          <button
-            id="prevBtn"
-            class="absolute h-fit backdrop-blur-xl top-1/2 text-black -translate-y-1/2 left-2 p-2 rounded-md focus:outline-none"
-          >
-          <img src="/Images/previous.svg" class="size-4" alt="">
-          </button>
-          
-          <button
-            id="nextBtn"
-            class="absolute h-fit backdrop-blur-xl top-1/2 text-black -translate-y-1/2 right-2 p-2 rounded-md focus:outline-none"
-          >
-          <img src="/Images/next.svg" class="size-4" alt="">
-            
-          </button>
-        </div>
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900">
-            Dashboard
-          </h1>
         </div>
 
-        <section>
-          <div class="relative mr-4 ml-4 rounded-md mx-auto px-4 py-2 bg-gray-900 h-[22rem] overflow-hidden">
-            <!-- Previous Button -->
-            <button class="absolute flex items-center justify-center duration-100 w-[3rem] h-[90%] text-white rounded-md top-1/2 -translate-y-1/2 left-2 hover:backdrop-blur-xl hover:bg-gradient-to-r from-slate-100/10 to-slate-50/10">
-              <img src="/Images/previous-white.svg" class="size-4" alt="">
-            </button>
-          
-            <!-- Card Container -->
-            <div class="flex gap-3 ml-[2.5rem] mr-[2.5rem] h-full items-center justify-center transition-transform duration-300 overflow-hidden" id="card-container">
-              <!-- Cards -->
+        <!-- Navigation Buttons -->
+        <button
+          id="prevBtn"
+          class="absolute h-fit backdrop-blur-xl top-1/2 text-black -translate-y-1/2 left-2 p-2 rounded-md focus:outline-none"
+        >
+          <img src="/Images/previous.svg" class="size-4" alt="" />
+        </button>
 
-              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
-                <div class="bg-transparent w-full h-full flex items-center justify-center">
-                  <img src="/Images/ROG-STRIX-Z490-F.png" alt="">
-                </div>
-                <p class="font-semibold">ROG Strix Z490-F Gaming</p>
-                <P class="mb-1 font-bold">$499.95</P>
-                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
-                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><p class="font-bold">Buy</p></button>
-                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
-                </div>
+        <button
+          id="nextBtn"
+          class="absolute h-fit backdrop-blur-xl top-1/2 text-black -translate-y-1/2 right-2 p-2 rounded-md focus:outline-none"
+        >
+          <img src="/Images/next.svg" class="size-4" alt="" />
+        </button>
+      </div>
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">
+          Today’s Best Deals
+        </h1>
+      </div>
+
+      <!-- Cards Container -->
+      <section>
+        <div
+          class="wrapper relative grid-cols-1 sm:grid-cols-4 mr-4 ml-4 rounded-md mx-auto px-4 py-2 bg-gray-900 h-[22rem] overflow-hidden"
+        >
+          <!-- Previous Button -->
+          <button
+            class="absolute flex items-center justify-center duration-100 w-[3rem] h-[90%] text-white rounded-md top-1/2 -translate-y-1/2 left-2 hover:backdrop-blur-xl hover:bg-gradient-to-r from-slate-100/10 to-slate-50/10"
+          >
+            <img src="/Images/previous-white.svg" class="size-4" alt="" />
+          </button>
+
+          <!-- Card Container -->
+          <div
+            class="carousel sm:flex grid grid-cols-1 gap-3 ml-[2.5rem] mr-[2.5rem] h-full items-center justify-center transition-transform duration-300 overflow-hidden"
+            id="card-container"
+          >
+            <!-- Cards -->
+
+            <div
+              class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%]"
+            >
+              <div
+                class="bg-transparent w-full h-full flex items-center justify-center"
+              >
+                <img src="/Images/ROG-STRIX-Z490-F.png" alt="" />
               </div>
-
-              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
-                <div class="bg-transparent w-full h-full flex items-center justify-center">
-                  <img src="/Images/ROG-STRIX-RTX3070-08G.png" alt="">
-                </div>
-                <p class="font-semibold">ROG STRIX RTX3070 08G</p>
-                <P class="mb-1 font-bold">$599.99</P>
-                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
-                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><img src="/Images/basket.svg" class="size-7" alt=""></button>
-                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
-                </div>
+              <p class="font-semibold">ROG Strix Z490-F Gaming</p>
+              <p class="mb-1 font-bold">$499.95</p>
+              <div
+                class="mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]"
+              >
+                <button
+                  class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"
+                >
+                  <p class="font-bold">Buy</p>
+                </button>
+                <button
+                  class="fav flex items-center justify-center bg-white border-2 w-[3rem] rounded-md mt-[0.2rem] mb-[0.2rem]"
+                >
+                  <img src="/Images/heart-off.svg" class="size-6" alt="" />
+                </button>
               </div>
-
-              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
-                <div class="bg-transparent w-full h-full flex items-center justify-center">
-                  <img src="/Images/ROG-Swift-PG329Q.png" alt="">
-                </div>
-                <p class="font-semibold">ROG Swift PG329Q</p>
-                <P class="mb-1 font-bold">$679.99</P>
-                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
-                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><img src="/Images/basket.svg" class="size-7" alt=""></button>
-                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
-                </div>
-              </div>
-
-              <div class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%] ">
-                <div class="bg-transparent w-full h-full flex items-center justify-center">
-                  <img src="/Images/ROG-STRIX-750W.png" alt="">
-                </div>
-                <p class="font-semibold">ROG STRIX 750W</p>
-                <P class="mb-1 font-bold">$131.99</P>
-                <div class=" mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]">
-                  <button class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"><img src="/Images/basket.svg" class="size-7" alt=""></button>
-                  <button class="fav flex items-center justify-center bg-white border-2 w-[3rem]  rounded-md mt-[0.2rem] mb-[0.2rem]"><img src="/Images/heart-off.svg" class="size-6" alt=""></button>
-                </div>
-              </div>
-
-              <!-- Add more cards as needed -->
             </div>
-          
-            <!-- Next Button -->
-            <button class="absolute flex items-center justify-center duration-100 w-[3rem] h-[90%] text-white rounded-md top-1/2 -translate-y-1/2 right-2 hover:backdrop-blur-xl hover:bg-gradient-to-r from-slate-100/10 to-slate-50/10">
-              <img src="/Images/next-white.svg" class="size-4" alt="">
-            </button>
+
+            <div
+              class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%]"
+            >
+              <div
+                class="bg-transparent w-full h-full flex items-center justify-center"
+              >
+                <img src="/Images/ROG-STRIX-RTX3070-08G.png" alt="" />
+              </div>
+              <p class="font-semibold">ROG STRIX RTX3070 08G</p>
+              <p class="mb-1 font-bold">$599.99</p>
+              <div
+                class="mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]"
+              >
+                <button
+                  class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"
+                >
+                  <p class="font-bold">Buy</p>
+                </button>
+                <button
+                  class="fav flex items-center justify-center bg-white border-2 w-[3rem] rounded-md mt-[0.2rem] mb-[0.2rem]"
+                >
+                  <img src="/Images/heart-off.svg" class="size-6" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%]"
+            >
+              <div
+                class="bg-transparent w-full h-full flex items-center justify-center"
+              >
+                <img src="/Images/ROG-Swift-PG329Q.png" alt="" />
+              </div>
+              <p class="font-semibold">ROG Swift PG329Q</p>
+              <p class="mb-1 font-bold">$679.99</p>
+              <div
+                class="mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]"
+              >
+                <button
+                  class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"
+                >
+                  <p class="font-bold">Buy</p>
+                </button>
+                <button
+                  class="fav flex items-center justify-center bg-white border-2 w-[3rem] rounded-md mt-[0.2rem] mb-[0.2rem]"
+                >
+                  <img src="/Images/heart-off.svg" class="size-6" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="grid grid-rows-[70%_7%_7%_1%_15%] bg-white text-black h-full rounded-md p-4 w-[27%]"
+            >
+              <div
+                class="bg-transparent w-full h-full flex items-center justify-center"
+              >
+                <img src="/Images/ROG-STRIX-750W.png" alt="" />
+              </div>
+              <p class="font-semibold">ROG STRIX 750W</p>
+              <p class="mb-1 font-bold">$131.99</p>
+              <div
+                class="mt-2 bg-gray-900 px-1 flex w-full rounded-md justify-between shadow-lg backdrop-blur-lg h-[3rem]"
+              >
+                <button
+                  class="flex items-center justify-center shadow-lg border-2 border-[#31843] w-[4.5rem] rounded-md mt-[0.2rem] mb-[0.2rem] bg-gradient-to-r from-green-400 to-emerald-300"
+                >
+                  <p class="font-bold">Buy</p>
+                </button>
+                <button
+                  class="fav flex items-center justify-center bg-white border-2 w-[3rem] rounded-md mt-[0.2rem] mb-[0.2rem]"
+                >
+                  <img src="/Images/heart-off.svg" class="size-6" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <!-- Add more cards as needed -->
           </div>
-          
-        </section>
+
+          <!-- Next Button -->
+          <button
+            class="absolute flex items-center justify-center duration-100 w-[3rem] h-[90%] text-white rounded-md top-1/2 -translate-y-1/2 right-2 hover:backdrop-blur-xl hover:bg-gradient-to-r from-slate-100/10 to-slate-50/10"
+          >
+            <img src="/Images/next-white.svg" class="size-4" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-6 py-8">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Shop by Category</h3>
+        <div class="flex h-10 truncate sm:h-fit space-x-4 overflow-y">
+          <button
+            class="px-6 py-3 bg-[#0D1B1E] text-white rounded-lg hover:bg-gray-300 hover:text-black"
+          >
+            All
+          </button>
+          <button
+            class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300"
+          >
+            GPUs / Video Graphics Cards
+          </button>
+          <button
+            class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300"
+          >
+            CPU / Processor
+          </button>
+          <button
+            class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300"
+          >
+            Power Supply
+          </button>
+          <button
+            class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300"
+          >
+            Monitors
+          </button>
+        </div>
+      </section>
+
       <main>
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
           <!-- Your content -->
           <div class="bg-white">
             <div
-              class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+              class="mx-auto max-w-2xl px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8"
             >
-              <h2 class="sr-only">Products</h2>
+              <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h1
+                  class="text-3xl font-bold tracking-tight text-gray-900 mb-4"
+                >
+                  More Items to Consider
+                </h1>
+              </div>
 
               <div
-                class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+                class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mb-5"
               >
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-01.jpg"
-                    alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
-                </a>
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-02.jpg"
-                    alt="Olive drab green insulated bottle with flared screw lid and flat top."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                </a>
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-03.jpg"
-                    alt="Person using a pen to cross a task off a productivity paper card."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
-                </a>
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">
-                    Machined Mechanical Pencil
-                  </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                </a>
+                <div
+                  class="w-full bg-gradient-to-r from-slate-100 to-slate-50 shadow-lg grid grid-rows-[70%_10%_7%_1%] text-black h-full rounded-md p-4 w-[27%]"
+                >
+                  <div
+                    class="bg-transparent w-full h-full flex items-center justify-center"
+                  >
+                    <img src="/Images/ROG-STRIX-Z490-F.png" alt="" />
+                  </div>
+                  <div
+                    class="flex items-center flex-row w-full gap-[3px] h-fit"
+                  >
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+
+                    <p class="ml-1 font-semibold text-gray-500">(5043)</p>
+                  </div>
+                  <p class="font-semibold">ROG Strix Z490-F Gaming</p>
+                  <div class="flex items-center w-full mb-1 mt-4 gap-[8px]">
+                    <p class="font-bold text-[1.5rem]">$499.95</p>
+                    <p class="line-through text-[0.87rem] text-gray-400">
+                      $599.95
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full bg-gradient-to-r from-slate-100 to-slate-50 shadow-lg grid grid-rows-[70%_10%_7%_1%] text-black h-full rounded-md p-4 w-[27%]"
+                >
+                  <div
+                    class="bg-transparent w-full h-full flex items-center justify-center"
+                  >
+                    <img
+                      src="/Images/Products_Images/ROG-Strix-850W-GUNDAM-EDITION.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex items-center flex-row w-full gap-[3px] h-fit"
+                  >
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+
+                    <p class="ml-1 font-semibold text-gray-500">(5043)</p>
+                  </div>
+                  <p class="font-semibold truncate">
+                    ROG-Strix-850W-GUNDAM-EDITION
+                  </p>
+                  <div class="flex items-center w-full mb-1 mt-4 gap-[8px]">
+                    <p class="font-bold text-[1.5rem]">$472.87</p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full bg-gradient-to-r from-slate-100 to-slate-50 shadow-lg grid grid-rows-[70%_10%_7%_1%] text-black h-full rounded-md p-4 w-[27%]"
+                >
+                  <div
+                    class="bg-transparent w-full h-full flex items-center justify-center"
+                  >
+                    <img
+                      src="/Images/Products_Images/ROG Hyperion EVA-02 PC case.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex items-center flex-row w-full gap-[3px] h-fit"
+                  >
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+
+                    <p class="ml-1 font-semibold text-gray-500">(5043)</p>
+                  </div>
+                  <p class="font-semibold truncate">
+                    ROG Hyperion EVA-02 PC case
+                  </p>
+                  <div class="flex items-center w-full mb-1 mt-4 gap-[8px]">
+                    <p class="font-bold text-[1.5rem]">$699.00</p>
+                    <p class="line-through text-[0.87rem] text-gray-400">
+                      $899.95
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full bg-gradient-to-r from-slate-100 to-slate-50 shadow-lg grid grid-rows-[70%_10%_7%_1%] text-black h-full rounded-md p-4 w-[27%]"
+                >
+                  <div
+                    class="bg-transparent w-full h-full flex items-center justify-center"
+                  >
+                    <img
+                      src="/Images/Products_Images/ROG-Zephyrus-M16-(2023)-GU604.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex items-center flex-row w-full gap-[3px] h-fit"
+                  >
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+
+                    <p class="ml-1 font-semibold text-gray-500">(5043)</p>
+                  </div>
+                  <p class="font-semibold truncate">
+                    ROG Zephyrus M16 (2023) GU604
+                  </p>
+                  <div class="flex items-center w-full mb-1 mt-4 gap-[8px]">
+                    <p class="font-bold text-[1.5rem]">$2,799.99</p>
+                  </div>
+                </div>
 
                 <!-- More products... -->
               </div>
 
               <div
-                class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
+                class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 mb-5"
               >
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-01.jpg"
-                    alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
-                </a>
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-02.jpg"
-                    alt="Olive drab green insulated bottle with flared screw lid and flat top."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                </a>
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-03.jpg"
-                    alt="Person using a pen to cross a task off a productivity paper card."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
-                </a>
-                <a href="#" class="group">
-                  <img
-                    src="https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg"
-                    alt="Hand holding black machined steel mechanical pencil with brass tip and top."
-                    class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
-                  />
-                  <h3 class="mt-4 text-sm text-gray-700">
-                    Machined Mechanical Pencil
-                  </h3>
-                  <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                </a>
+                <div
+                  class="w-full bg-gradient-to-r from-slate-100 to-slate-50 shadow-lg grid grid-rows-[70%_10%_7%_1%] text-black h-full rounded-md p-4 w-[27%]"
+                >
+                  <div
+                    class="bg-transparent w-full h-full flex items-center justify-center"
+                  >
+                    <img
+                      src="/Images/Products_Images/ROG-STRIX-LC-II-280-ARGB.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="flex items-center flex-row w-full gap-[3px] h-fit"
+                  >
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-on.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+                    <img src="/Images/star-off.svg" class="size-4" alt="" />
+
+                    <p class="ml-1 font-semibold text-gray-500">(5043)</p>
+                  </div>
+                  <p class="font-semibold">ROG STRIX LC II 280 ARGB</p>
+                  <div class="flex items-center w-full mb-1 mt-4 gap-[8px]">
+                    <p class="font-bold text-[1.5rem]">$119.99</p>
+                  </div>
+                </div>
 
                 <!-- More products... -->
               </div>
+
+              <!-- Pagnation -->
+              <nav
+                aria-label="Page navigation example"
+                class="flex flex-col w-full items-center justify-center mt-10"
+              >
+                <span class="text-sm text-gray-700 dark:text-gray-400 mb-3">
+                  Showing <span class="font-semibold text-black">1</span> to
+                  <span class="font-semibold text-black">10</span> of
+                  <span class="font-semibold text-black">100</span> Entries
+                </span>
+                <ul class="flex items-center -space-x-px h-10 text-base">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      <span class="sr-only">Previous</span>
+                      <svg
+                        class="w-3 h-3 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 6 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 1 1 5l4 4"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                      >1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                      >2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-current="page"
+                      class="z-10 flex items-center justify-center px-4 h-10 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+                      >3</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                      >4</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                      >5</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      <span class="sr-only">Next</span>
+                      <svg
+                        class="w-3 h-3 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 6 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 9 4-4-4-4"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </main>
     </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-sm">&copy; 2024 TechSphere . All rights reserved.</p>
+        <nav class="mt-4 space-x-4 mb-3">
+          <a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a>
+          <a href="#" class="text-gray-300 hover:text-white"
+            >Terms of Service</a
+          >
+          <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+        </nav>
+        <div class="flex w-full items-center justify-center gap-4 mb-4">
+          <img src="/Images/instagram-light.svg" class="size-4" alt="" />
+          <img src="/Images/facebook-light.svg" class="size-4" alt="" />
+        </div>
+        <div class="flex justify-start w-full">
+          <p dir="rtl" class="w-[50%]">
+            مرحبًا بكم في <strong>TechSphere</strong>، وجهتكم الموثوقة لتسوق
+            أفضل مكونات الحاسوب! سواء كنت محترفًا في مجال التكنولوجيا أو مبتدئًا
+            يسعى لتجميع جهازه الأول، نقدم لكم تشكيلة واسعة من أحدث وأفضل مكونات
+            الحواسيب بأسعار تنافسية. في <strong>TechSphere</strong>، نؤمن بأن
+            التكنولوجيا هي مفتاح المستقبل، ونلتزم بتوفير منتجات عالية الجودة
+            تشمل المعالجات، بطاقات الرسوميات، اللوحات الأم، أجهزة التخزين،
+            وغيرها الكثير. تسوق بسهولة وثقة، واستمتع بخدماتنا المتميزة التي تشمل
+            دعمًا فنيًا متكاملًا وتوصيلًا سريعًا إلى باب منزلك. ابدأ رحلتك مع
+            <strong>TechSphere</strong> اليوم، واجعل أحلامك التقنية واقعًا! 💻✨
+          </p>
+
+          <div class="map-container w-[40%]" style="width: 100%; height: 400px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4609.795466249847!2d2.849457842926586!3d33.79781704372606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdz!4v1733742750130!5m2!1sen!2sdz"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="/script.js"></script>
   </body>
