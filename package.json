@@ -10,6 +10,7 @@
   "license": "ISC",
   "keywords": [],
   "dependencies": {
+    "eco": "file:",
     "tw-elements": "^2.0.0"
   }
 }
